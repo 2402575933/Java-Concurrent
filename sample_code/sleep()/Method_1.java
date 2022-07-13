@@ -11,6 +11,7 @@ public class Method_1 {
                 log.debug("logging... 开始睡眠");
                 try {
                     Thread.sleep(1000);  // 睡眠代码写在 线程 t1 中，代表线程 t1 睡眠 1s
+                    TimeUnit.SECONDS.sleep(1);  // 指定单位的形式，睡眠 1s
                 } catch (InterruptedException e) {
                     throw new RuntimeException(e);
                 }
